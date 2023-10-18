@@ -18,7 +18,7 @@ tensorflow 2.6.2
 ## Training
 * To train the classifier with custom data: update 'data_path' and split data to train/test in the 'IMAGES' folder.
 * To train DISCOVER with trained classifier: update 'data_path' and 'IMAGES' folder. update classifier.h5 saved model. 
-* To analyze and interpret results: update 'data_path' and 'IMAGES' folder. . update 'CLF_SAVED_MODEL.h5' saved model. update 'DISCOVER_SAVED_MODELS' folder.  
+* To analyze and interpret results: update 'data_path' and 'IMAGES' folder. update 'CLF_SAVED_MODEL.h5' saved model. update 'DISCOVER_SAVED_MODELS' folder.  
 
 ## Licence
 
