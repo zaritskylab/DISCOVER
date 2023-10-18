@@ -15,10 +15,11 @@ tensorflow 2.6.2
 ## GENDER faces analysis
 ![GENDER analysis](./DOCS/GENDER_explanations.PNG)
 
-## Training
-* To train the classifier with custom data: update 'data_path' and split data to train/test in the 'IMAGES' folder.
-* To train DISCOVER with trained classifier: update 'data_path' and 'IMAGES' folder. update classifier.h5 saved model. 
-* To analyze and interpret results: update 'data_path' and 'IMAGES' folder. update 'CLF_SAVED_MODEL.h5' saved model. update 'DISCOVER_SAVED_MODELS' folder.  
+## Training celebA or other custom data
+* Download celebA data: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html and save images in 'IMAGES folder' according to current directories
+* To train the classifier with celebA data: use 'GENDER_CLF_TRAINING.ipynb'. Update 'data_path' and Run.
+* To train DISCOVER with trained classifier: use 'GENDER_DISCOVER_TRAINING.ipynb'. Update 'data_path' and update 'GENDER_CLF_SAVED_MODEL.h5'. 
+* To analyze and interpret results: use 'GENDER_ANALYSIS.ipynb'. update 'data_path' and GENDER_CLF_SAVED_MODEL.h5 and  'GENDER_DISCOVER_SAVED_MODELS' folder.  
 
 ## Licence
 
