@@ -10,10 +10,10 @@ Python 3.9.10
 tensorflow 2.6.2
 
 ## IVF analysis
-![IVF_analysis](./DOCS/IVF_explanations.png)
+![IVF analysis](./DOCS/IVF_explanations.png)
 
 ## GENDER faces analysis
-![GENDER_analysis](./DOCS/GENDER_explanations.png)
+![GENDER analysis](./DOCS/GENDER_explanations.PNG)
 
 ## Licence
 
