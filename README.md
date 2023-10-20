@@ -1,7 +1,7 @@
 # DISCOVER: Visual interpretability of image-based classification models 
 Official Tensorflow2 implementation of: Visual interpretability of image-based classification models by generative latent space disentanglement applied to in vitro fertilization
 
-## Requirements
+## Main requirements
 * Python 3.9.10
 * tensorflow 2.6.2
 
