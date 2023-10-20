@@ -32,7 +32,7 @@ is distinct from the ones encoded by other latent features.
 * To train the classifier with celebA data:  use 'GENDER_CLF_TRAINING.ipynb'. Update 'data_path' prefix. Run notebook.
 * To train DISCOVER with trained classifier: use 'GENDER_DISCOVER_TRAINING.ipynb'. Update 'data_path' prefix and update 'GENDER_CLF_SAVED_MODEL.h5' saved model. Run notebook.
 * To analyze and interpret results:          use 'GENDER_ANALYSIS.ipynb'. update 'data_path' prefix and GENDER_CLF_SAVED_MODEL.h5 and 'GENDER_DISCOVER_SAVED_MODELS'. Run notebook.
-
+* For custom classifier:  update the inner layers names of the classifier in the notebooks of 'DISCOVER' and 'ANALYSIS'
 ## Licence
 
 This work is released under the MIT licence.
