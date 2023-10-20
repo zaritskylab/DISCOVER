@@ -22,7 +22,7 @@ is distinct from the ones encoded by other latent features.
 ![IVF analysis](./DOCS/Inference.png)
 
 ## IVF Interpretation
-![IVF analysis](./DOCS/IVF_explanations.png)
+![IVF analysis](./DOCS/IVF_explanations_.png)
 
 ## GENDER faces Interpretation
 ![GENDER analysis](./DOCS/GENDER_explanations.PNG)
