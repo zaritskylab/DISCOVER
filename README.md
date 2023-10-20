@@ -1,13 +1,10 @@
 # DISCOVER: Visual interpretability of image-based classification models 
 Official Tensorflow2 implementation of: Visual interpretability of image-based classification models by generative latent space disentanglement applied to in vitro fertilization
 
-
-![architecture](./DOCS/DISCOVER_architecture.png)
-
-
 ## Requirements
 * Python 3.9.10
 * tensorflow 2.6.2
+
 
 ## Method Overview
 DISCOVER is a designated general-purpose interpretability “discovery machine” especially geared toward quantitative interpretation 
@@ -18,6 +15,11 @@ latent representation, where a subset of latent features encapsulates the discri
 and where each of these latent features encodes a distinct visual property in the image that is important for classification and that
 is distinct from the ones encoded by other latent features.
 
+![architecture](./DOCS/DISCOVER_architecture.png)
+
+## Inference
+* Counterfactual visual explanation by latent feature traversal
+![IVF analysis](./DOCS/Inference.png)
 
 ## IVF Interpretation
 ![IVF analysis](./DOCS/IVF_explanations.png)
