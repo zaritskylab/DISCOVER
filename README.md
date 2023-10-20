@@ -9,10 +9,20 @@ Official Tensorflow2 implementation of: Visual interpretability of image-based c
 * Python 3.9.10
 * tensorflow 2.6.2
 
-## IVF analysis
+## Method Overview
+DISCOVER is a designated general-purpose interpretability “discovery machine” especially geared toward quantitative interpretation 
+of known and new classification-driving semantic image properties. 
+DISCOVER is a generative model that learns representations designed to discover the underlying visual properties driving image-based
+classification models. The main innovation of our method is a disentangling module that optimizes a classification-driven and disentangled
+latent representation, where a subset of latent features encapsulates the discriminative information of the classification model, 
+and where each of these latent features encodes a distinct visual property in the image that is important for classification and that
+is distinct from the ones encoded by other latent features.
+
+
+## IVF Interpretation
 ![IVF analysis](./DOCS/IVF_explanations.png)
 
-## GENDER faces analysis
+## GENDER faces Interpretation
 ![GENDER analysis](./DOCS/GENDER_explanations.PNG)
 
 ## Training celebA or other custom data
