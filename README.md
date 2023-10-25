@@ -17,23 +17,33 @@ is distinct from the ones encoded by other latent features.
 
 ![architecture](./DOCS/DISCOVER_architecture.png)
 
-## Inference
-* Counterfactual visual explanation by latent feature traversal
-![IVF analysis](./DOCS/Inference.png)
 
-## IVF Interpretation
-![IVF analysis](./DOCS/IVF_explanations_.png)
+## CelebA GENDER analysis
+* Open notebook DISCOVER/GENDER/GENDER_ANALYSIS.ipynb.
+* Find and change 'data_path = <PATH>' to local path.
+* This will automatically load the saved classifier and DISCOVER models
+* Run notebook and see the comments in each cell to understand which analysis is taking place.
 
-## GENDER faces Interpretation
-![GENDER analysis](./DOCS/GENDER_explanations.PNG)
+## Interpreting a new dataset (celebA or other)
+* Train classifier:
+* ------------------- 
+* Any CNN classifier model can be used. Here the notebook DISCOVER/GENDER/GENDER_CLF_TRAINING.ipynb is given here for ease of use.
+* Update the TRAIN TEST images folders for classes 0 and 1 in the DISCOVER/GENDER/IMAGES folder.  
+* For celebA download data from: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html. 
+* Find and change 'data_path = <PATH>' to local path.
+* This will automatically load the saved classifier and DISCOVER models
+* Run notebook and see the comments in each cell to understand which analysis is taking place.
+* save the trained model to the data_path. (for celebA it is named GENDER_CLF_SAVED_MODEL.h5)
 
-## Training celebA or other custom data
-* Download celebA data: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html and save images in 'IMAGES' folder according to current split (MALE_TRAIN/FEMALE_TRAIN/MALE_TEST/FEMALE_TEST) 
-* To train the classifier with celebA data:  use 'GENDER_CLF_TRAINING.ipynb'. Update 'data_path' prefix. Run notebook.
-* To train DISCOVER with trained classifier: use 'GENDER_DISCOVER_TRAINING.ipynb'. Update 'data_path' prefix and update 'GENDER_CLF_SAVED_MODEL.h5' saved model. Run notebook.
-* To analyze and interpret results:          use 'GENDER_ANALYSIS.ipynb'. update 'data_path' prefix and GENDER_CLF_SAVED_MODEL.h5 and 'GENDER_DISCOVER_SAVED_MODELS'. Run notebook.
-* For custom classifier:  update the inner layers names of the classifier in the notebooks of 'DISCOVER' and 'ANALYSIS'
+* Train DISCOVER:
+* ------------------- 
+* Find and change 'data_path = <PATH>' to local path.
+* This will load the data and the saved classifier model (for celebA it is named GENDER_CLF_SAVED_MODEL.h5)
+* DISCOVER uses the inner layers of the classifier. Update the names of the inner layers you wish to use. reccomended to use the deeper layers.
+Find 'clf_outputs' and update the names from the classifier by running clf_model.summary(). 
+* To upload previous saved DISCOVER model switch on upload_saved_model=1. These models are saved in DISCOVER/GENDER/GENDER_DISCOVER_SAVED_MODELS.
+# Run notebook. Allow saving of the model network in the final cell.
+
 ## Licence
-
 This work is released under the MIT licence.
 
