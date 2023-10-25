@@ -25,7 +25,7 @@ is distinct from the ones encoded by other latent features.
 * Run notebook and see the comments in each cell to understand which analysis is taking place.
 
 ## Interpreting a new dataset (celebA or other)
-# Train classifier:
+### Train classifier:
 * Any CNN classifier model can be used. Here the notebook DISCOVER/GENDER/GENDER_CLF_TRAINING.ipynb is given for ease of use.
 * Update the TRAIN TEST images folders for classes 0 and 1 in the DISCOVER/GENDER/IMAGES folder.  
 * For celebA download data from: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html. 
@@ -34,7 +34,7 @@ is distinct from the ones encoded by other latent features.
 * Run notebook and see the comments in each cell to understand which analysis is taking place.
 * save the trained model to the data_path. (for celebA it is named GENDER_CLF_SAVED_MODEL.h5)
 
-# Train DISCOVER:
+### Train DISCOVER:
 * Find and change 'data_path = <PATH>' to local path.
 * This will load the data and the saved classifier model (for celebA it is named GENDER_CLF_SAVED_MODEL.h5)
 * DISCOVER uses the inner layers of the classifier. Update the names of the inner layers you wish to use. reccomended to use the deeper layers.
