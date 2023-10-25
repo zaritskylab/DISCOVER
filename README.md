@@ -40,7 +40,7 @@ is distinct from the ones encoded by other latent features.
 * DISCOVER uses the inner layers of the classifier. Update the names of the inner layers you wish to use. reccomended to use the deeper layers.
 Find 'clf_outputs' and update the names from the classifier by running clf_model.summary(). 
 * To upload previous saved DISCOVER model switch on upload_saved_model=1. These models are saved in DISCOVER/GENDER/GENDER_DISCOVER_SAVED_MODELS.
-# Run notebook. Allow saving of the model network in the final cell.
+* Run notebook. Allow saving of the model network in the final cell.
 
 ## Licence
 This work is released under the MIT licence.
