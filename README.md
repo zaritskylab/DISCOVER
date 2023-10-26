@@ -18,11 +18,8 @@ is distinct from the ones encoded by other latent features.
 
 ![architecture](./DOCS/DISCOVER_architecture.png)
 
-## IVf analysis
-* A single image is given for analysis due to IP restrictions.
-* Open notebook DISCOVER/	## CelebA GENDER analysis
-* Download data from: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html. 
-* Update the TRAIN and TEST images folders for classes 0 and 1 in the DISCOVER/GENDER/IMAGES folder. 
+## IVF analysis
+* A single image is given for analysis due to IP restrictions. 
 * Open notebook DISCOVER/IVF/IVF_ANALYSIS.ipynb.
 * Find and change 'data_path = <PATH>' to local path.
 * This will automatically load the saved classifier and DISCOVER models
