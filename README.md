@@ -19,16 +19,16 @@ is distinct from the ones encoded by other latent features.
 ![architecture](./DOCS/DISCOVER_architecture.png)
 
 ## IVF analysis
-* A single image is given for analysis due to IP restrictions. 
+* IN DOSCOVER/IVF/IMAGES, a single image is given for analysis due to IP restrictions.
 * Open notebook DISCOVER/IVF/IVF_ANALYSIS.ipynb.
 * Find and change 'data_path = <PATH>' to local path.
-* This will automatically load the saved classifier and DISCOVER models
+* This will automatically load the saved classifier and DISCOVER networks from DISCOVER/IVF/SAVED_MODELS.
 * Run notebook and see the comments in each cell to understand which analysis is taking place.
 
 
 ## CelebA GENDER analysis
-* Download data from: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html. 
-* Update the TRAIN and TEST images folders for classes 0 and 1 in the DISCOVER/GENDER/IMAGES folder. 
+* A small subset of celebA data is available in DISCOVER/GENDER/IMAGES. To Download the full dataset go to: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html. 
+* For the full dataset update the TRAIN and TEST images folders for classes 0 and 1 in the DISCOVER/GENDER/IMAGES folder. 
 * Open notebook DISCOVER/GENDER/GENDER_ANALYSIS.ipynb.
 * Find and change 'data_path = <PATH>' to local path.
 * This will automatically load the saved classifier and DISCOVER models
@@ -38,7 +38,8 @@ is distinct from the ones encoded by other latent features.
 * Update the TRAIN and TEST images folders for classes 0 and 1 in the DISCOVER/GENDER/IMAGES folder. 
 
 ### Train classifier:
-* Any CNN classifier model can be used. Here the notebook DISCOVER/GENDER/GENDER_CLF_TRAINING.ipynb is given for ease of use. 
+# Any CNN classifier model can be used.
+* Here the notebook DISCOVER/GENDER/GENDER_CLF_TRAINING.ipynb is given for ease of use. 
 * Find and change 'data_path = <PATH>' to local path.
 * This will automatically load the saved classifier and DISCOVER models
 * Run notebook and see the comments in each cell to understand which analysis is taking place.
