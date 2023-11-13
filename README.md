@@ -1,13 +1,13 @@
 # DISCOVER: Visual interpretability of image-based classification models 
 Official Tensorflow2 implementation of: Visual interpretability of image-based classification models by generative latent space disentanglement applied to in vitro fertilization
 
-## Main requirements
+## Main requirements:
 * Python 3.9.10
 * tensorflow 2.6.2
 * See requirements.txt for all packages
 
 
-## Method Overview
+## Method Overview:
 DISCOVER is a designated general-purpose interpretability “discovery machine” especially geared toward quantitative interpretation 
 of known and new classification-driving semantic image properties. 
 DISCOVER is a generative model that learns representations designed to discover the underlying visual properties driving image-based
@@ -18,15 +18,16 @@ is distinct from the ones encoded by other latent features.
 
 ![architecture](./DOCS/DISCOVER_architecture.png)
 
-## IVF analysis
-* IN DOSCOVER/IVF/IMAGES, a single image is given for analysis due to IP restrictions.
+## IVF analysis:
+* IN DISCOVER/IVF/IMAGES, a single image is given for analysis due to IP restrictions.
 * Open notebook DISCOVER/IVF/IVF_ANALYSIS.ipynb.
-* Find and change 'data_path = <PATH>' to local path.
-* This will automatically load the saved classifier and DISCOVER networks from DISCOVER/IVF/SAVED_MODELS.
-* Run notebook and see the comments in each cell to understand which analysis is taking place.
+* Find and change 'data_path = <PATH>' to local parent path.
+* (This will automatically load the saved classifier and DISCOVER networks from DISCOVER/IVF/SAVED_MODELS).
+* Run notebook "Restart kernel and Run all cells" 
+* See the comments in each cell to understand which analysis is taking place.
 
 
-## CelebA GENDER analysis
+## CelebA GENDER analysis:
 * A small subset of celebA data is available in DISCOVER/GENDER/IMAGES. To Download the full dataset go to: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html. 
 * For the full dataset update the TRAIN and TEST images folders for classes 0 and 1 in the DISCOVER/GENDER/IMAGES folder. 
 * Open notebook DISCOVER/GENDER/GENDER_ANALYSIS.ipynb.
@@ -34,7 +35,7 @@ is distinct from the ones encoded by other latent features.
 * This will automatically load the saved classifier and DISCOVER models
 * Run notebook and see the comments in each cell to understand which analysis is taking place.
 
-## Interpreting a new dataset (celebA or other)
+## Interpreting a new dataset (celebA or other):
 * Update the TRAIN and TEST images folders for classes 0 and 1 in the DISCOVER/GENDER/IMAGES folder. 
 
 ### Train classifier:
@@ -53,6 +54,6 @@ Find 'clf_outputs' and update the names from the classifier by running clf_model
 * To upload previous saved DISCOVER model switch on upload_saved_model=1. These models are saved in DISCOVER/GENDER/GENDER_DISCOVER_SAVED_MODELS.
 * Run notebook. Allow saving of the model network in the final cell.
 
-## Licence
-This work is released under the MIT licence.
+## License:
+This work is released under the MIT license.
 
