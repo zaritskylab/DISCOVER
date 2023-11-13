@@ -4,7 +4,7 @@ Official Tensorflow2 implementation of: Visual interpretability of image-based c
 ## Main requirements
 * Python 3.9.10
 * tensorflow 2.6.2
-* use requirements.txt for all packages
+* See requirements.txt for all packages
 
 
 ## Method Overview
