@@ -31,8 +31,7 @@ is distinct from the ones encoded by other latent features.
 * A small subset of celebA data is available in DISCOVER/GENDER/IMAGES. To Download the full dataset go to: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html. 
 * For the full dataset update the TRAIN and TEST images folders for classes 0 and 1 in the DISCOVER/GENDER/IMAGES folder. 
 * Open notebook DISCOVER/GENDER/GENDER_ANALYSIS.ipynb.
-* Find and change 'data_path = <PATH>' to local path.
-* This will automatically load the saved classifier and DISCOVER models
+* Find and change 'data_path = <PATH>' to local path. This will automatically load the saved classifier and DISCOVER models
 * Run notebook and see the comments in each cell to understand which analysis is taking place.
 
 ## Interpreting a new dataset (celebA or other):
@@ -41,14 +40,12 @@ is distinct from the ones encoded by other latent features.
 ### Train classifier:
 #### Any CNN classifier model can be used.
 * Here the notebook DISCOVER/GENDER/GENDER_CLF_TRAINING.ipynb is given for ease of use. 
-* Find and change 'data_path = <PATH>' to local path.
-* This will automatically load the saved classifier and DISCOVER models
+* Find and change 'data_path = <PATH>' to local path. This will automatically load the saved classifier and DISCOVER models
 * Run notebook and see the comments in each cell to understand which analysis is taking place.
 * save the trained model to the data_path. (for celebA it is named GENDER_CLF_SAVED_MODEL.h5)
 
 ### Train DISCOVER:
-* Find and change 'data_path = <PATH>' to local path.
-* This will load the data and the saved classifier model (for celebA it is named GENDER_CLF_SAVED_MODEL.h5)
+* Find and change 'data_path = <PATH>' to local path. This will load the data and the saved classifier model (for celebA it is named GENDER_CLF_SAVED_MODEL.h5)
 * DISCOVER uses the inner layers of the classifier. Update the names of the inner layers you wish to use. reccomended to use the deeper layers.
 Find 'clf_outputs' and update the names from the classifier by running clf_model.summary(). 
 * To upload previous saved DISCOVER model switch on upload_saved_model=1. These models are saved in DISCOVER/GENDER/GENDER_DISCOVER_SAVED_MODELS.
