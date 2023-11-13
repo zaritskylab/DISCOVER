@@ -39,7 +39,7 @@ is distinct from the ones encoded by other latent features.
 * Update the TRAIN and TEST images folders for classes 0 and 1 in the DISCOVER/GENDER/IMAGES folder. 
 
 ### Train classifier:
-# Any CNN classifier model can be used.
+#### Any CNN classifier model can be used.
 * Here the notebook DISCOVER/GENDER/GENDER_CLF_TRAINING.ipynb is given for ease of use. 
 * Find and change 'data_path = <PATH>' to local path.
 * This will automatically load the saved classifier and DISCOVER models
