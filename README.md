@@ -18,8 +18,9 @@ is distinct from the ones encoded by other latent features.
 
 ![architecture](./DOCS/DISCOVER_architecture.png)
 
+
 ## IVF analysis:
-* IN DISCOVER/IVF/IMAGES, a single image is given for analysis due to IP restrictions.
+* In DISCOVER/IVF/IMAGES, a single image is given for analysis due to IP restrictions.
 * Open notebook DISCOVER/IVF/IVF_ANALYSIS.ipynb.
 * Find and change 'data_path = <PATH>' to local parent path.
   (This will automatically load the saved classifier and DISCOVER networks from DISCOVER/IVF/SAVED_MODELS).
